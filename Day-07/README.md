@@ -10,3 +10,6 @@ Hmmm... Lemme check!
 Dictionaries!
 I'm allowed to use all the things I have used previously.
 I'll use lists, if, else, for, while, string manipulation, etc.
+
+Oh, and today I solved a Leetcode problem!
+I checked Leetcode problems for the first time and solved it on my own, it was an easy difficulty one though.
