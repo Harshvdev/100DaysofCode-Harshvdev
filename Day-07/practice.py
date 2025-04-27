@@ -35,7 +35,4 @@
 # for i2 in num2:
 #     print(3*i2)
 
-haystack = "sadbutsad"
-needle = "sad"
-print(haystack.find(needle))
 
