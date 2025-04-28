@@ -1,0 +1,4 @@
+I had difficulty in using try and except blocks handling errors.
+I learned that .index() doesn't give index of the item in a list, it gives the very first item's index that appear for the first time.
+I also thought if my way of learning is wrong. If I'm spending too much time on basics. I know basics are important but I should move on. I can already do the stuffs in the book Python Crash Course which is for beginners.
+But I still can't solve most easy LeetCode problems. I must be able to solve all the easy level LeetCode problems then I'll be sure that I know the basics. But it seems too difficult.
