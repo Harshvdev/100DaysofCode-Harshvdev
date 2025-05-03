@@ -1,33 +1,33 @@
-# class Restaurant:
-#     def __init__(self, restaurant_name, cuisine_type):
-#         self.restaurant_name = restaurant_name
-#         self.cuisine_type = cuisine_type
+class Restaurant:
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
 
-#     def describe_restaurant(self):
-#         print(f"This is {self.restaurant_name} restaurant. We serve {self.cuisine_type} cuisine.")
+    def describe_restaurant(self):
+        print(f"This is {self.restaurant_name} restaurant. We serve {self.cuisine_type} cuisine.")
     
-#     def open_restaurant(self):
-#         print(f"{self.restaurant_name} restaurant is open!")
+    def open_restaurant(self):
+        print(f"{self.restaurant_name} restaurant is open!")
 
-#     def close_restaurant(self):
-#         print(f"{self.restaurant_name} is closed.")
+    def close_restaurant(self):
+        print(f"{self.restaurant_name} is closed.")
 
-# my_restaurant = Restaurant('Sushi Wars', 'Japanese')
-# my_restaurant.open_restaurant()
-# my_restaurant.describe_restaurant()
+my_restaurant = Restaurant('Sushi Wars', 'Japanese')
+my_restaurant.open_restaurant()
+my_restaurant.describe_restaurant()
 
-# my_restaurant_1 = Restaurant('Pasta Wars', 'Italian')
-# my_restaurant_2 = Restaurant('Taco Wars', 'Mexican')
-# my_restaurant_3 = Restaurant('Samosa Wars', 'Indian')
-# print("")
-# my_restaurant_1.open_restaurant()
-# my_restaurant_1.describe_restaurant()
-# print("")
-# my_restaurant_2.open_restaurant()
-# my_restaurant_2.describe_restaurant()
-# print("")
-# my_restaurant_3.open_restaurant()
-# my_restaurant_3.describe_restaurant()
+my_restaurant_1 = Restaurant('Pasta Wars', 'Italian')
+my_restaurant_2 = Restaurant('Taco Wars', 'Mexican')
+my_restaurant_3 = Restaurant('Samosa Wars', 'Indian')
+print("")
+my_restaurant_1.open_restaurant()
+my_restaurant_1.describe_restaurant()
+print("")
+my_restaurant_2.open_restaurant()
+my_restaurant_2.describe_restaurant()
+print("")
+my_restaurant_3.open_restaurant()
+my_restaurant_3.describe_restaurant()
 
 class User:
     def __init__(self, first_name, region):
