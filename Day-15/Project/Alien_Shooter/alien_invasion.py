@@ -31,4 +31,5 @@ if __name__=='__main__':
     ai = AlienInvasion()
     ai.run_game()
 
-###I'm dropping this project as learning Pygame won't help me in future.
+###I'm dropping this project as learning Pygame won't help me in future###
+
