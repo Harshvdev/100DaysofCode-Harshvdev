@@ -1,0 +1,3 @@
+Today I though of making a project that would take me 2-3 days to make. So that I can get better at Python. I didn't know what project to do so I asked ChatGPT. It told me to make a command-line To-Do app. Which is boring, not unique, and neither useful. Then after some time, I got a ping on Discord. I saw there was a website hackaprompt.com. I visited the tutorial section. Took me some time but I got 7,972 score out of 9000. Highest was 8,968. The total was supposed to be 10000 but there were no instructions what to do on the last challenge. It simply told that we are ready to take on real challenges now.
+
+I got 13th place.
