@@ -7,4 +7,4 @@ if not os.path.exists("Harsh-folder"):
 delete_input = input("Do you want to delete the folders you just made? [y/n]").lower()
 
 if delete_input == 'y':
-    shutil.rmtree(f"Harsh-Folder")
+    shutil.rmtree(f"Harsh-Folder") # You cannot delete directories that are not empty with os.rmdir.
