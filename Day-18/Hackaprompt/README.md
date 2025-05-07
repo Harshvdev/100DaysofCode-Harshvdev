@@ -1,0 +1,2 @@
+Today I got 1st place in Tutorial Leaderboards on hackaprompt.com! 🎉
+Feeling happy achieving this. Even thought I won't benefit from it but it still feels good to be at the first position. I'll add the screenshot of it as well. There was no instruction in the 10th challenge. It just told that we are ready to do real challenges now.
