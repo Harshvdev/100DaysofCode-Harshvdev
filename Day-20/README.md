@@ -1,2 +1,2 @@
 Today I read about web development journey and various problems beginners face on The Odin Project (TOP)
-I read how to ak questions, what things to avoid such as using AI to code when learning. The texts are beginner-friendly. It is kinda different as most platforms teach through videos. But it seems interesting so I'll keep going for now.
+I read how and when to ask questions and answer to other people's questions, what things to avoid such as using AI to code when learning. The texts are beginner-friendly. It is kinda different as most platforms teach through videos. But it seems interesting so I'll keep going for now. I completed 10% of the Foundations Course today.
