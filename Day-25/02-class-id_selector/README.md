@@ -1,0 +1,1 @@
+Link to the assignment: https://github.com/TheOdinProject/css-exercises/tree/main/foundations/intro-to-css/02-class-id-selectors

@@ -1,0 +1,1 @@
+Assignment link: https://github.com/TheOdinProject/css-exercises/tree/main/foundations/intro-to-css/05-descendant-combinator

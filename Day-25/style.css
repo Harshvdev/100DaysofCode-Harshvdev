@@ -1,0 +1,10 @@
+.ancestor .content {
+  color: black;
+  font-weight: 1000px;
+  text-align: center;
+  background-color: rosybrown;
+}
+
+p {
+  font-weight: 1000;
+}
