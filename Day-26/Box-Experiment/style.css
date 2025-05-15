@@ -1,0 +1,21 @@
+.one {
+  background-color: gray;
+  text-align: center;
+  padding: 50px;
+  margin: 50px;
+  box-sizing: content-box;
+  border: 2px solid red;
+  height: 300px;
+  width: 700px;
+}
+
+.two {
+  background-color: pink;
+  text-align: center;
+  padding: 500px;
+  margin: 50px;
+  box-sizing: border-box;
+  border: 2px solid green;
+  height: 300px;
+  width: 700px;
+}
