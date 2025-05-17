@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span style="padding: 10px; border: 1px solid black; margin: 10px; background: #eee;">
+  Inline box with padding and margin
+  </span>
+  <div style="
+  width: 300px;
+  margin: 20px auto;
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid navy;
+  ">
+  This div is horizontally centered.
+  </div>
+  <div style="margin-bottom: 50px; background: coral; padding: 10px;">
+  Box 1
+  </div>
+  <div style="margin-top: 30px; background: lightcoral; padding: 10px;">
+  Box 2
+  </div>
+  <style>
+    .inline {
+      display: inline;
+      background-color: lightcoral;
+      width: 100px;  /* Won't work */
+      height: 50px;  /* Won't work */
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: lightgreen;
+      width: 100px;  /* Works */
+      height: 50px;  /* Works */
+    }
+  </style>
+
+  <div>
+    <span class="inline">Inline</span>
+    <span class="inline-block">Inline-block</span>
+  </div>
+
+</body>
+</html>

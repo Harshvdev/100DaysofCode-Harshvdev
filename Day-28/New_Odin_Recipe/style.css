@@ -1,0 +1,60 @@
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background-color: #ffd07b;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 20px;
+  color: #0D1821;
+  display: inline-block;
+}
+
+.whole {
+  background-color: #FDB833;
+  padding: 64px;
+  padding-top: 0px;
+  border: 2px solid #342A21;
+}
+
+.heading h1 {
+  text-align: center;
+  background-color: bisque;
+  margin-top: 0px;
+  margin: 0 16px 16px 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 8px;
+  border: 2px solid #342A21;
+  border-top: none;
+}
+
+.content {
+  text-align: center;
+}
+
+.macaroni_img, .potato_img, .pasta_img {
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.macaroni, .potato, .pasta {
+  margin: 8px;
+  background-color: #DA667B;
+  margin-top: 50px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #342A21;
+  transition: all 0.3s ease;
+}
+
+.macaroni:hover, .potato:hover, .pasta:hover {
+  box-shadow: 4px 9px 20px black;
+  transform: scale(1.01);
+}
