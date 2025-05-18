@@ -1,0 +1,8 @@
+.flex-container > div {
+  background-color: peachpuff;
+  border: 12px solid maroon;
+  padding: 20px;
+  height: 100px;
+  max-width: 120px;
+  flex: 3000;
+}
