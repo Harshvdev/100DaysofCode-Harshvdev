@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Shrink Challenge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      width: 200px; /* small on purpose to force shrinking */
+      height: 100px;
+      border: 3px solid black;
+    }
+
+    .box {
+      flex-basis: 100px; /* each wants 100px */
+      flex-grow: 0;       /* no growing */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .box1 {
+      background-color: crimson;
+      flex-shrink: 1;
+    }
+
+    .box2 {
+      background-color: royalblue;
+      flex-shrink: 3;
+    }
+
+    .box3 {
+      background-color: seagreen;
+      flex-shrink: 5;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧪 Flex Shrink Test</h2>
+  <p>Look closely at which box becomes smaller.</p>
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+</body>
+</html>

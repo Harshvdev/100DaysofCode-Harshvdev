@@ -1,0 +1,36 @@
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  height: 100px;
+  width: 200px;
+  border: 2px solid brown;
+  background-color: peachpuff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div {
+  border: 2px solid maroon;
+  background-color: peachpuff;
+}
+
+.second {
+  height: 75px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third {
+  height: 50px;
+  width: 50px;
+}
