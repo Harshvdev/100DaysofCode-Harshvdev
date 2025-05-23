@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 2%;
+  background-color: #A1B5D8;
+}
+
+.logo img {
+  height: 40px;
+  width:  auto;
+  max-width: 100%;
+  display: block;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  gap: 20px;
+  background-color: #1F2937;
+}
+
+.slideshow p {
+  color: #E5E7EB;
+}
+
+.slide-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 10%;
+}
+
+.slide-image img {
+  height: 300px;
+  border-radius: 20px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #738290;
+  justify-content: center;
+  gap: 20px;
+  padding: 2%;
+}
+
+.contact-section h2 {
+  align-self: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacts img {
+  height: 80px;
+}
+
+.contacts div {
+  padding: 2%;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+.quote {
+  background-color: #E5E7EB;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote em {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+.author {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+footer {
+  text-align: center;
+  background-color: #A1B5D8;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9rem;
+  color: #333;
+}
