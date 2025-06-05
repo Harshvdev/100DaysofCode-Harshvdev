@@ -5,6 +5,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -35,6 +39,11 @@ header {
   font-weight: bold;
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 .slideshow {
   display: flex;
   justify-content: space-between;
