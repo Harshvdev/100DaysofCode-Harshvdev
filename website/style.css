@@ -13,19 +13,20 @@ header {
   justify-content: space-between;
   padding: 1% 2%;
   background-color: #A1B5D8;
+  box-sizing: border-box;
 }
 
 .logo img {
-  height: 40px;
+  height: clamp(24px, 5vw, 60px);
   width:  auto;
-  max-width: 100%;
+  max-width: 100vw;
   display: block;
 }
 
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(10px, 2vw, 20px);
 }
 
 .navlinks a {
@@ -37,8 +38,9 @@ header {
 .slideshow {
   display: flex;
   justify-content: space-between;
-  padding: 2%;
-  gap: 20px;
+  box-sizing: border-box;
+  padding: 5vh;
+  gap: clamp(10px, 2vw, 20px);
   background-color: #1F2937;
 }
 
@@ -50,11 +52,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 10%;
+  padding: 2vh 5vw;
+  text-align: center;
 }
 
 .slide-image img {
-  height: 300px;
+  max-width: 70vw;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -64,8 +68,9 @@ header {
   align-items: center;
   background-color: #738290;
   justify-content: center;
-  gap: 20px;
+  gap: clamp(10px, 2vw, 20px);
   padding: 2%;
+  box-sizing: border-box;
 }
 
 .contact-section h2 {
@@ -75,15 +80,16 @@ header {
 .contacts {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: clamp(10px, 2vw, 20px);
 }
 
 .contacts img {
-  height: 80px;
+  height: 6vw;
 }
 
 .contacts div {
-  padding: 2%;
+  box-sizing: border-box;
+  padding: 2vw;
   border: 2px solid black;
   border-radius: 20%;
 }
@@ -94,11 +100,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .quote em {
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
+  font-size: clamp(16px, 2vw, 32px);
 }
 
 .author {
@@ -114,4 +121,25 @@ footer {
   padding: 1em 0;
   font-size: 0.9rem;
   color: #333;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .header {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .slideshow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide-text {
+    order: 1;
+  }
+  .quote em {
+    font-size: 4vw;
+  }
 }
