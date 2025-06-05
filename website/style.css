@@ -37,6 +37,7 @@ header {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 2vw;
 }
 
 .main-content {
@@ -150,5 +151,8 @@ footer {
   }
   .quote em {
     font-size: 4vw;
+  }
+  .navlinks a {
+    font-size: 3vw;
   }
 }
