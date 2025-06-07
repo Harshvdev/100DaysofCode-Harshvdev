@@ -3,8 +3,8 @@
   --accent-color: #FFD369;
   --text-color: #ffffff;
   --bg-color: #f9f9f9;
-  --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Poppins', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
 }
 
 * {
@@ -53,6 +53,12 @@ ul {
   color: var(--text-color)
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -65,7 +71,7 @@ ul {
   font-size: clamp(3vw, 4.2em, 5vw);
   font-family: var(--font-primary);
   font-weight: 700;
-  padding: 8vw 5vw 2vw 5vw;
+  padding: 8vw 6vw 2vw 6vw;
   color: #1e1e1e;
   text-align: center;
   /* background-clip: text;
@@ -90,4 +96,66 @@ ul {
   color: #1e1e1e;
   background: linear-gradient(-90deg, #4A90E2, #FFD369);
   margin: 2.5vw;
+}
+
+.progress-log {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 3.5vw, 40px);
+  background-color:		#A2C8EE;
+  padding: 5vw;
+}
+
+.day-group {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.day {
+  width: 26vw;
+  height: 28vw;
+  background-color: var(--primary-color);
+  padding: 2vw;
+  border: 5px solid;
+  border-image: linear-gradient(270deg, var(--primary-color), var(--accent-color)) 1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2vw, 30px);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.day h3 {
+  font-size: clamp(16px, 2vw, 32px);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--text-color)
+}
+
+.progress-log h2 {
+  font-size: clamp(16px, 3vw, 40px);
+  font-family: var(--font-primary);
+}
+
+.day p {
+  font-family: var(--font-secondary);
+  font-size: clamp(16px, 1.4vw, 32px);
+  font-weight: 550;
+  color: #FFFFF0;
+}
+
+.day span {
+  color: black;
+  font-weight: 500;
+}
+
+.day a {
+  text-decoration: none;
+  color: burlywood
 }
