@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #4A90E2;
-  --accent-color: #FFD369;
-  --text-color: #ffffff;
-  --bg-color: #f9f9f9;
+  --primary-color: #2C3E50; /* Slate Blue */
+  --accent-color: #1ABC9C;  /* Teal */
+  --text-color: #ffffff;    /* White */
+  --bg-color: #f4f7f5;      /* Light Cool Gray */
   --font-secondary: 'Montserrat', sans-serif;
   --font-primary: 'Poppins', sans-serif;
 }
@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--bg-color);
+  color: #333
 }
 
 header {
@@ -31,7 +32,7 @@ header {
   padding: 0 3.5rem;
 }
 
-ul {
+.navbar ul {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -43,14 +44,14 @@ ul {
 
 .navbar a {
   text-decoration: none;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .logo {
   font-family: var(--font-primary);
   font-size: clamp(16px, 2.8vw, 32px);
   font-weight: bold;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 main {
@@ -74,9 +75,6 @@ main {
   padding: 8vw 6vw 2vw 6vw;
   color: #1e1e1e;
   text-align: center;
-  /* background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .title p {
@@ -99,63 +97,226 @@ main {
 }
 
 .progress-log {
-  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: clamp(10px, 3.5vw, 40px);
-  background-color:		#A2C8EE;
+  background-color: #ECF0F1; /* Slightly darker cool gray */
   padding: 5vw;
+  width: 100%;
 }
 
 .day-group {
   display: flex;
   gap: clamp(20px, 3vw, 40px);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
-  
 }
 
 .day {
-  width: 26vw;
-  height: 28vw;
+  width: 320px;
+  height: 360px;
   background-color: var(--primary-color);
   padding: 2vw;
+  flex-shrink: 0;
   border: 5px solid;
   border-image: linear-gradient(270deg, var(--primary-color), var(--accent-color)) 1;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: clamp(20px, 2vw, 30px);
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+  gap: clamp(20px, 1vw, 30px);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .day h3 {
   font-size: clamp(16px, 2vw, 32px);
   font-family: var(--font-primary);
   font-weight: 700;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .progress-log h2 {
   font-size: clamp(16px, 3vw, 40px);
   font-family: var(--font-primary);
+  color: #34495E; /* Dark Slate */
 }
 
 .day p {
   font-family: var(--font-secondary);
-  font-size: clamp(16px, 1.4vw, 32px);
-  font-weight: 550;
-  color: #FFFFF0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #BDC3C7;
+  /* We no longer need flex-grow here */
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes items to opposite ends */
+  margin-top: auto; /* This pushes the footer to the bottom of the card! */
+  gap: 0.5rem;
 }
 
 .day span {
-  color: black;
-  font-weight: 500;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem; /* Slightly smaller to ensure it fits */
+  white-space: nowrap; /* Prevents the date from ever wrapping */
+  /* We no longer need overflow-wrap */
 }
 
 .day a {
   text-decoration: none;
-  color: burlywood
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.about-section {
+  width: 100%;
+  padding: 5vw;
+  background-color: var(--bg-color); /* Matches the main body background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-section h3 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-family: var(--font-primary);
+  color: #34495E; /* Consistent with other section titles */
+  text-align: center;
+}
+
+.about-text {
+  flex: 1; /* Allows text to take up available space */
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-text p li {
+  font-family: var(--font-secondary);
+}
+
+.about-text ul {
+  list-style-position: inside;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1rem;
+  list-style-type: none; /* remove default bullets */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px; /* Prevents the section from becoming too wide */
+}
+
+.about-text ul li::before {
+  content: '✤'; /* custom bullet */
+  color: var(--accent-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
+}
+
+.about-img {
+  flex-basis: 45%; /* Defines the ideal size of the image container */
+  min-width: 300px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lang-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.lang-section h3 {
+  font-size: 3rem;
+  font-family: var(--font-primary);
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  width: 100vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 0.2vw;
+  height: 15vw;
+  width: 12vw;
+}
+
+.card i {
+  color: var(--accent-color)
+}
+
+.card p {
+  color: white;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar ul {
+    font-size: 0.9rem; /* Smaller font for nav links on mobile */
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .day {
+    width: 90%; /* Cards take up most of the screen width */
+    height: auto; /* Height adjusts to content */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stacks the text and image vertically */
+    gap: 2.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-text ul {
+    text-align: left;
+    padding-left: 1rem; /* Adjust list padding for mobile */
+  }
 }
