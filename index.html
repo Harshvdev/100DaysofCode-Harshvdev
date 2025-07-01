@@ -3,57 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./website/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-  <title>Homepage - Harshvdev</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>#100DaysofCode Homepage</title>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="./website/images/logo.png" alt="logo">
-    </div>
-    <nav class="navlinks">
-      <a href="#">About</a>
-      <a href="./website/web.html">Web Development</a>
-      <a href="#">Python</a>
+    <nav class="navbar">
+      <div class="logo">#100DaysofCode</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Progress Log</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tech Stack</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
-  <div class="main-content">
-    <div class="slideshow">
-      <div class="slide-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae praesentium perspiciatis molestias sint veritatis iusto aliquid sit laudantium aspernatur. Quasi totam perferendis id expedita, doloremque modi ipsum esse mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae numquam recusandae tempora nam. Beatae eum temporibus quibusdam quia! Neque accusamus fugit praesentium amet quibusdam repellat minus doloremque omnis fugiat non.</p>
-      </div>
-      <div class="slide-image">
-        <img src="./website/images/anime.webp" alt="temp-img">
+  <main>
+    <div class="title">
+      <h1>Journey Through #100DaysofCode</h1>
+      <p>From Zero to Dev, One Day at a Time</p>
+      <button class="title-button">SEE MY PROGRESS</button>
+    </div>
+    <div class="progress-log">
+      <h2>My Coding Odyssey: The Progress Log</h2>
+      <div class="day-group">
+        <div class="day-1 day">
+          <h3>Day-1: Wrote my first Python program!</h3>
+          <p>
+            Printed "Hello World", made a little ASCII art, and played around with variables and f-strings to describe myself.
+          </p>
+          <div class="card-footer">
+            <a href="#">[View Day-1 Code]</a>
+            <span>April 20, 2025</span>
+          </div>
+        </div>
+        <div class="day-2 day">
+          <h3>Day-2: Strings, Math, Lists & Functions</h3>
+          <p>
+            Practiced string and math functions, explored lists and tuples, and wrote basic input-based functions.
+          </p>
+          <div class="card-footer">
+            <a href="#">[View Day-2 Code]</a>
+            <span>April 21, 2025</span>
+          </div>
+        </div>
+        <div class="day-3 day">
+          <h3>Day-3: Dictionaries & Loops</h3>
+          <p>
+            Practiced month lookups with dictionaries, loops, and built a simple calculator, guessing game, and translator.
+          </p>
+          <div class="card-footer">
+            <a href="#">[View Day-3 Code]</a>
+            <span>April 22, 2025</span>
+          </div>
+        </div>
+        <div class="day-4 day">
+          <h3>Day-4: Vowel Game & File Handling</h3>
+          <p>
+            Created a vowel-counting game using conditionals, loops, and error handling. Also tried basic file writing in Python. 
+          </p>
+          <div class="card-footer">
+            <a href="#">[View Day-4 Code]</a>
+            <span>April 23, 2025</span>
+          </div>
+        </div>
+        <div class="day-5 day">
+          <h3>Day-5: Built a Multiple Choice Quiz</h3>
+          <p>
+            Created a simple quiz app using classes to manage questions and answers. Practiced user input, loops, and scoring.
+          </p>
+          <div class="card-footer">
+            <a href="#">[View Day-5 Code]</a>
+            <span>April 24, 2025</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="contact-section">
-      <h2>Social Platforms</h2>
-      <div class="contacts">
-        <div>
-          <a href="https://www.linkedin.com/in/harshvdev/"><img src="./website/images/linkedin.png" alt="Linkedin"></a>
+    <div class="about-section">
+      <h3>About This Challenge</h3>
+      <div class="about-content">
+        <div class="about-text">
+          <p>The #100DaysOfCode challenge is a personal commitment to coding for at least one hour every day for 100 consecutive days. It's an incredible journey of discipline, learning, and growth in the world of programming.</p>
+          <br>
+          <p>My primary goals for this challenge are:</p>
+          <br>
+          <ul>
+            <li>Progress steadily through The Odin Project, focusing first on web development fundamentals.</li>
+            <li>Learn how to use Git and GitHub effectively, especially for tracking my work.</li>
+            <li>Strengthen my problem-solving mindset by breaking down coding tasks clearly.</li>
+            <li>Document my learning and share updates online to stay accountable and motivated.</li>
+            <li>Make at least one project from my personal idea list.</li>
+          </ul>
+          </div>
+          <div class="about-img">
+            <img src="https://imgs.search.brave.com/NdDwAVwSp3B4_ybEUOCm0LYjFAo8vkYpK1pphXGJhPA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM0/NzY3Nzc3Ny9waG90/by9jbG9zZXVwLW9m/LWNvbXB1dGVyLXBy/b2dyYW1taW5nLXR5/cGluZy1vbi1sYXB0/b3AuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUNRZmFUNURx/aXBnREFHenAydFJG/WGhBaFY3NjVkWUJy/OEF2Rl9ja1kzVnM9" alt="Illustration of a person coding on a laptop, representing the coding journey.">
+          </div>
+      </div>
+    </div>
+    <div class="lang-section">
+      <h3>Technologies I'm Learning</h3>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-brands fa-html5 fa-4x"></i>
+          <p>HTML5</p>
         </div>
-        <div>
-        <a href="https://www.facebook.com/profile.php?id=61576010830125"><img src="./website/images/facebook.png" alt="Facebook"></a>
+        <div class="card">
+          <i class="fa-brands fa-css3-alt fa-4x"></i>
+          <p>CSS3</p>
         </div>
-        <div>
-        <a href="https://x.com/harshvdev"><img src="./website/images/x.png" alt="X"></a>
+        <div class="card">
+          <i class="fa-brands fa-js fa-4x"></i>
+          <p>JavaScript</p>
         </div>
-        <div>
-        <a href="https://github.com/Harshvdev"><img src="./website/images/github.png" alt="Github"></a>
+        <div class="card">
+          <i class="fa-brands fa-react fa-4x"></i>
+          <p>React.js</p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-python fa-4x"></i>
+          <p>Python</p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-node-js fa-4x"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-database fa-4x"></i>
+          <p>SQL/NoSQL</p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-git-alt fa-4x"></i>
+          <p>Git</p>
         </div>
       </div>
     </div>
-    <div class="quote">
-      <p><em>"A lesson without pain is meaningless. That’s because you can’t gain
-        something without sacrificing something else."</em></p>
-      <p class="author"><strong>— Edward Elric</strong></p>
-    </div>
-  </div>
-  <footer>
-    <p>&copy; 2025 Harshvdev. All rights reserved.</p>
-  </footer>
+  </main>
 </body>
 </html>
